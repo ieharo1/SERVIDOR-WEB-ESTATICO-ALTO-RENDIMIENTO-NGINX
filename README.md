@@ -1,29 +1,42 @@
-# Art
+# 🎨 Art
 
-Proyecto de arte digital o visual.
+Proyecto de arte digital o visual desarrollado por **Isaac Esteban Haro Torres**.
 
-## Descripción
+---
+
+## 📝 Descripción
 
 Colección de proyectos relacionados con arte digital, diseño gráfico o visualización creativa.
 
-## Características
+---
+
+## ✨ Características
 
 - Creaciones artísticas digitales
 - Diseño gráfico
 - Visualizaciones creativas
 
-## Stack Tecnológico
+---
+
+## 🛠️ Stack Tecnológico
 
 - HTML/CSS/JavaScript
 - Canvas API
 - Herramientas de diseño
 
-## Autor
+---
 
-🧑‍💻 **Isaac Haro**
+## 👨‍💻 Desarrollado por Isaac Esteban Haro Torres
 
-Ingeniero en Sistemas · Full Stack · Automatización · Data
+**Ingeniero en Sistemas · Full Stack · Automatización · Data**
 
-## Licencia
+- 📧 Email: zackharo1@gmail.com
+- 📱 WhatsApp: 098805517
+- 💻 GitHub: https://github.com/ieharo1
+- 🌐 Portafolio: https://ieharo1.github.io/portafolio-isaac.haro/
 
-MIT — contribuciones bienvenidas 🚀
+---
+
+## 📄 Licencia
+
+© 2026 Isaac Esteban Haro Torres - Todos los derechos reservados.
