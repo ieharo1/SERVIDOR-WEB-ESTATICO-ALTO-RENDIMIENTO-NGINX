@@ -1,33 +1,67 @@
-﻿# Art - Static Site Production Profile
+﻿# Servidor Web Estático de Alto Rendimiento con Nginx
 
-Este repo ahora muestra un despliegue de frontend estatico con Nginx optimizado para cache y compresion.
+Infraestructura de despliegue para frontend estático con enfoque en velocidad, cache agresiva y compresión en entorno Linux containerizado.
 
-## Arquitectura
+## Descripción
 
-- `Dockerfile`: imagen ligera sobre `nginx:alpine`.
-- `docker-compose.yml`: levanta un servicio de Nginx listo para publicar.
-- `.env`: define el puerto publico.
-- `nginx/default.conf`: SPA fallback, cache de assets y gzip.
+Este servidor está pensado para publicar sitios HTML/CSS/JS con comportamiento de SPA y optimización de assets para producción.
 
-## Levantar el proyecto
+## ¿Qué hace este proyecto?
+
+- Sirve contenido estático desde Nginx en imagen ligera Alpine.
+- Aplica compresión gzip para mejorar tiempos de respuesta.
+- Configura cache de larga duración para assets estáticos.
+- Implementa fallback de SPA con `try_files`.
+
+## Características Principales
+
+| Característica | Descripción |
+|---|---|
+| Entrega estática | Publicación de frontend sin runtime extra |
+| Gzip habilitado | Reduce tamaño de transferencia |
+| Cache inteligente | `Cache-Control immutable` en assets |
+| SPA fallback | Soporte para rutas internas frontend |
+
+## Stack Tecnológico
+
+- Nginx 1.27 (alpine)
+- Docker
+- Docker Compose
+
+## Instalación y Uso
+
+### Levantar entorno
 
 ```bash
 docker compose up -d --build
 ```
 
-Abrir: `http://localhost:8081`
+### Probar
 
-## Variables a cambiar
+- URL: `http://localhost:8081`
 
-- `NGINX_PORT`: puerto local para exponer el contenedor.
+## Variables de Entorno
 
-## Archivos clave
+- `NGINX_PORT`: puerto local para exponer el servicio.
 
-- `Dockerfile`
-- `docker-compose.yml`
-- `.env`
-- `nginx/default.conf`
-- `app/index.html`
+## Estructura del Proyecto
+
+```text
+.
+├── Dockerfile
+├── docker-compose.yml
+├── .env
+├── app/
+│   └── index.html
+└── nginx/
+    └── default.conf
+```
+
+## Casos de Uso
+
+- Landing pages de alto tráfico.
+- Sitios corporativos estáticos.
+- Frontends SPA desacoplados de APIs externas.
 
 ---
 
