@@ -1,42 +1,47 @@
-# 🎨 Art
+﻿# Art - Static Site Production Profile
 
-Proyecto de arte digital o visual desarrollado por **Isaac Esteban Haro Torres**.
+Este repo ahora muestra un despliegue de frontend estatico con Nginx optimizado para cache y compresion.
+
+## Arquitectura
+
+- `Dockerfile`: imagen ligera sobre `nginx:alpine`.
+- `docker-compose.yml`: levanta un servicio de Nginx listo para publicar.
+- `.env`: define el puerto publico.
+- `nginx/default.conf`: SPA fallback, cache de assets y gzip.
+
+## Levantar el proyecto
+
+```bash
+docker compose up -d --build
+```
+
+Abrir: `http://localhost:8081`
+
+## Variables a cambiar
+
+- `NGINX_PORT`: puerto local para exponer el contenedor.
+
+## Archivos clave
+
+- `Dockerfile`
+- `docker-compose.yml`
+- `.env`
+- `nginx/default.conf`
+- `app/index.html`
 
 ---
 
-## 📝 Descripción
-
-Colección de proyectos relacionados con arte digital, diseño gráfico o visualización creativa.
-
----
-
-## ✨ Características
-
-- Creaciones artísticas digitales
-- Diseño gráfico
-- Visualizaciones creativas
-
----
-
-## 🛠️ Stack Tecnológico
-
-- HTML/CSS/JavaScript
-- Canvas API
-- Herramientas de diseño
-
----
-
-## 👨‍💻 Desarrollado por Isaac Esteban Haro Torres
+## ‍ Desarrollado por Isaac Esteban Haro Torres
 
 **Ingeniero en Sistemas · Full Stack · Automatización · Data**
 
-- 📧 Email: zackharo1@gmail.com
-- 📱 WhatsApp: 098805517
-- 💻 GitHub: https://github.com/ieharo1
-- 🌐 Portafolio: https://ieharo1.github.io/portafolio-isaac.haro/
+-  Email: zackharo1@gmail.com
+-  WhatsApp: 098805517
+-  GitHub: https://github.com/ieharo1
+-  Portafolio: https://ieharo1.github.io/portafolio-isaac.haro/
 
 ---
 
-## 📄 Licencia
+##  Licencia
 
 © 2026 Isaac Esteban Haro Torres - Todos los derechos reservados.
